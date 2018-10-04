@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labproject.NewHomePageController">
+   <bottom>
+      <SplitPane>
+         <items>
+            <RadioButton mnemonicParsing="false" selected="true" text="Database Connected..." textFill="GREEN" BorderPane.alignment="CENTER" />
+         </items>
+      </SplitPane>
+   </bottom>
+   <top>
+      <Text fill="#011025" layoutX="62.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NSU&#10;HOSPITAL" textAlignment="CENTER" wrappingWidth="526.154296875" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Algerian" size="50.0" />
+         </font>
+      </Text>
+   </top>
+   <center>
+      <VBox alignment="CENTER" layoutY="41.0" prefHeight="387.0" prefWidth="650.0">
+         <children>
+            <HBox alignment="CENTER" layoutY="41.0" opacity="0.9" prefHeight="160.0" prefWidth="650.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#gotoDocRecommend" prefHeight="160.0" prefWidth="200.0" textFill="#0259c3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="docRec" fitHeight="109.0" fitWidth="148.0" layoutX="-8.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../Downloads/appointment%20(1).png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#9f0ec3" layoutX="2.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor Recommender" textAlignment="CENTER" wrappingWidth="138.13671875">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#gotoAppointmentPage" prefHeight="160.0" prefWidth="200.0" textFill="#0259c3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="setApp" fitHeight="121.0" fitWidth="120.0" layoutX="13.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../Desktop/Images/New%20folder%20(2)/setapp.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#9f0ec3" layoutX="10.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set Appointment" textAlignment="CENTER" wrappingWidth="121.13671875">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#gotoPatientRegistraion" prefHeight="160.0" prefWidth="200.0" textFill="#dd0000">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="patReg" fitHeight="114.0" fitWidth="114.0" layoutX="18.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../Desktop/Images/adduser.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#b20303" layoutX="3.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Registration" textAlignment="CENTER" wrappingWidth="137.13671875">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#gotoDoctorRegistraion" prefHeight="160.0" prefWidth="200.0" textFill="#eb0000">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <AnchorPane prefHeight="104.0" prefWidth="158.0">
+                           <children>
+                              <ImageView fx:id="docReg" fitHeight="114.0" fitWidth="111.0" layoutX="16.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../Desktop/Images/regdoc.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#b20303" layoutX="4.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor Registration" textAlignment="CENTER" wrappingWidth="135.13671875">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutY="201.0" opacity="0.9" prefHeight="160.0" prefWidth="650.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#gotoPatientSearch" prefHeight="160.0" prefWidth="200.0" textFill="#1ca621">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <AnchorPane prefHeight="127.0" prefWidth="160.0">
+                           <children>
+                              <ImageView fx:id="patSearch" fitHeight="121.0" fitWidth="180.0" layoutX="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../Desktop/Images/findpat_1.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#1aa176" layoutX="20.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Patient" textAlignment="CENTER" wrappingWidth="121.13671875">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#gotoDoctorSearch" prefHeight="160.0" prefWidth="200.0" textFill="#1ca621">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="docSearch" fitHeight="121.0" fitWidth="180.0" layoutX="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../Desktop/Images/docfind.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#0fa491" layoutX="24.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Doctor" textAlignment="CENTER" wrappingWidth="112.13671875">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="databaseButton" mnemonicParsing="false" onAction="#gotoDocDatabase" prefHeight="160.0" prefWidth="200.0" textFill="#2e0cab">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="mysql" fitHeight="108.0" fitWidth="107.0" layoutX="31.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../Desktop/Images/database.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#0b2b9e" layoutX="29.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Database" textAlignment="CENTER" wrappingWidth="101.2109375">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#gotoLoginPage" prefHeight="160.0" prefWidth="200.0">
+                     <graphic>
+                        <AnchorPane prefHeight="156.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="logout" fitHeight="123.0" fitWidth="114.0" layoutX="25.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+                              <Text fill="RED" layoutX="41.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log Out" textAlignment="CENTER" wrappingWidth="65.13671875">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labproject.RegisterDocController">
+   <children>
+      <TextField fx:id="id" alignment="CENTER" layoutX="203.0" layoutY="242.0" onKeyPressed="#setPbar1" prefHeight="30.0" prefWidth="300.0" promptText="ID" />
+      <Text layoutX="181.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID : " />
+      <Text layoutX="32.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor's Information :" textAlignment="CENTER" wrappingWidth="209.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="name" alignment="CENTER" layoutX="203.0" layoutY="275.0" onKeyPressed="#setPbar2" prefHeight="30.0" prefWidth="300.0" promptText="Name" />
+      <Text layoutX="160.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME : " />
+      <Text layoutX="104.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SPECIALIZATION : " />
+      <TextField fx:id="spec" alignment="CENTER" layoutX="203.0" layoutY="309.0" onKeyPressed="#setPbar3" prefHeight="30.0" prefWidth="300.0" promptText="Specialization" />
+      <Button defaultButton="true" layoutX="299.0" layoutY="422.0" mnemonicParsing="false" onAction="#submit" text="Submit" />
+      <Text layoutX="191.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor Registration" textAlignment="CENTER" wrappingWidth="269.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <ProgressBar fx:id="pbar" layoutX="443.0" layoutY="527.0" prefWidth="200.0" progress="0.0" />
+      <Button layoutX="290.0" layoutY="522.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="20.0" prefWidth="72.0" text="Back" AnchorPane.leftAnchor="290.0" AnchorPane.topAnchor="522.0">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" layoutX="475.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="error" layoutX="244.0" layoutY="214.0" prefHeight="17.0" prefWidth="164.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="msg" layoutX="443.0" layoutY="528.0" prefHeight="17.0" prefWidth="187.0" textFill="#169e16" />
+   </children>
+</AnchorPane>

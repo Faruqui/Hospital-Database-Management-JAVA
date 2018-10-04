@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labproject.DocRecController">
+   <children>
+      <Text fill="#023154" layoutX="165.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor Recommender ^_^" wrappingWidth="355.13671875">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Button layoutX="293.0" layoutY="521.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="25.0" prefWidth="101.0" text="Back" AnchorPane.leftAnchor="293.0" AnchorPane.topAnchor="521.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Text layoutX="14.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Health Problem :" wrappingWidth="114.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="problem" alignment="CENTER" layoutX="137.0" layoutY="142.0" prefHeight="25.0" prefWidth="162.0" promptText="Health Problem" />
+      <Button defaultButton="true" layoutX="299.0" layoutY="142.0" mnemonicParsing="false" onAction="#recommend" prefHeight="25.0" prefWidth="88.0" text="Recommend" />
+      <Separator layoutX="1.0" layoutY="176.0" prefHeight="8.0" prefWidth="390.0" />
+      <Text layoutX="19.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recommended Doctors :" wrappingWidth="218.13671875">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="image" fitHeight="534.0" fitWidth="321.0" layoutX="371.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/Images/appointment.png" />
+         </image></ImageView>
+      <AnchorPane layoutX="14.0" layoutY="217.0" prefHeight="277.0" prefWidth="375.0">
+         <children>
+            <TableView fx:id="docList" layoutY="4.0" opacity="0.9" prefHeight="277.0" prefWidth="380.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="idDoc" prefWidth="32.0" text="ID" />
+                <TableColumn fx:id="nameDoc" prefWidth="214.0" text="Name" />
+                  <TableColumn fx:id="specDoc" prefWidth="127.0" text="Specialization" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="error" layoutX="14.0" layoutY="485.0" prefHeight="40.0" prefWidth="390.0" textFill="RED" />
+   </children>
+</AnchorPane>

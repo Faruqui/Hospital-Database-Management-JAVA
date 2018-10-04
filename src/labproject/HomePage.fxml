@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labproject.HomePageController">
+   <children>
+      <Text layoutX="141.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;Inset Name&gt; Hospital" textAlignment="CENTER" wrappingWidth="373.13671875">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="#1b0202" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Button layoutX="74.0" layoutY="122.0" mnemonicParsing="false" onAction="#gotoPatientRegistraion" prefHeight="162.0" prefWidth="243.0" text="&#10;&#10;&#10;&#10;vvvvb&#10;" textAlignment="CENTER">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="362.0" layoutY="192.0" mnemonicParsing="false" onAction="#gotoPatientSearch" prefHeight="100.0" prefWidth="200.0" text="Patient Search">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="95.0" layoutY="321.0" mnemonicParsing="false" onAction="#gotoDoctorRegistraion" prefHeight="100.0" prefWidth="200.0" text="Doctor Registraion">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="362.0" layoutY="315.0" mnemonicParsing="false" onAction="#gotoDoctorSearch" prefHeight="100.0" prefWidth="200.0" text="Doctor Search">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="106.0" fitWidth="144.0" layoutX="133.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/mysql.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

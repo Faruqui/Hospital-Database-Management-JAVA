@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labproject.DocDatabaseController">
+   <center>
+      <TabPane prefHeight="482.0" prefWidth="650.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Doctors">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="docList" editable="true" layoutX="1.0" layoutY="78.0" prefHeight="410.0" prefWidth="650.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="78.0">
+                          <columns>
+                            <TableColumn fx:id="idDoc" prefWidth="38.0" text="ID" />
+                            <TableColumn fx:id="nameDoc" prefWidth="329.0" text="Name" />
+                              <TableColumn fx:id="specDoc" prefWidth="280.0" text="Specialization" />
+                          </columns>
+                        </TableView>
+                        <TextField fx:id="IDDoc" alignment="CENTER" layoutX="6.0" layoutY="36.0" prefHeight="25.0" prefWidth="45.0" promptText="ID" />
+                        <Button layoutX="51.0" layoutY="36.0" mnemonicParsing="false" onAction="#deleteDoc" prefWidth="55.0" text="Delete" textFill="RED" />
+                        <TextField fx:id="docSpec" alignment="CENTER" layoutX="113.0" layoutY="36.0" prefHeight="25.0" prefWidth="165.0" promptText="Specialization" />
+                        <Button layoutX="278.0" layoutY="36.0" mnemonicParsing="false" onAction="#searchDocSpec" prefWidth="55.0" text="Search" />
+                        <Button layoutX="278.0" layoutY="5.0" mnemonicParsing="false" onAction="#searchDocName" prefWidth="55.0" text="Search" />
+                        <Button layoutX="51.0" layoutY="5.0" mnemonicParsing="false" onAction="#searchDocId" prefWidth="55.0" text="Search" />
+                        <TextField fx:id="docID" alignment="CENTER" layoutX="6.0" layoutY="5.0" prefHeight="25.0" prefWidth="45.0" promptText="ID" />
+                        <TextField fx:id="docName" alignment="CENTER" layoutX="113.0" layoutY="5.0" prefHeight="25.0" prefWidth="165.0" promptText="Name" />
+                        <ImageView fx:id="docImg" fitHeight="83.0" fitWidth="86.0" layoutX="567.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Desktop/Images/docfind.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+            </content>
+               <graphic>
+                  <ImageView fx:id="docImg1" fitHeight="46.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/Images/docfind.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+          </Tab>
+          <Tab text="Patients">
+               <content>
+                  <AnchorPane>
+                     <children>
+                        <TableView fx:id="patList" layoutY="77.0" prefHeight="415.0" prefWidth="650.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="77.0">
+                          <columns>
+                            <TableColumn fx:id="idPat" minWidth="5.0" prefWidth="35.0" text="ID" />
+                            <TableColumn fx:id="namePat" prefWidth="144.0" text="Name" />
+                              <TableColumn fx:id="genderPat" prefWidth="63.0" text="Gender" />
+                              <TableColumn fx:id="agePat" prefWidth="55.0" text="Age" />
+                              <TableColumn fx:id="phonePat" prefWidth="122.0" text="Phone" />
+                              <TableColumn fx:id="diseasePat" prefWidth="118.0" text="Health Problem" />
+                              <TableColumn fx:id="datePat" prefWidth="107.0" text="Date Registered" />
+                          </columns>
+                        </TableView>
+                        <TextField fx:id="IDPat" alignment="CENTER" layoutX="8.0" layoutY="40.0" prefHeight="25.0" prefWidth="45.0" promptText="ID" />
+                        <Button layoutX="54.0" layoutY="40.0" mnemonicParsing="false" onAction="#deletePat" prefWidth="55.0" text="Delete" textFill="RED" />
+                        <ImageView fx:id="patImg" fitHeight="83.0" fitWidth="86.0" layoutX="567.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Desktop/Images/findpat_1.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="patID" alignment="CENTER" layoutX="8.0" layoutY="8.0" prefWidth="45.0" promptText="ID" />
+                        <TextField fx:id="patName" alignment="CENTER" layoutX="119.0" layoutY="8.0" promptText="Name" />
+                        <Button layoutX="268.0" layoutY="8.0" mnemonicParsing="false" onAction="#searchPatName" text="Search" />
+                        <Button layoutX="53.0" layoutY="8.0" mnemonicParsing="false" onAction="#searchPatID" prefWidth="55.0" text="Search" />
+                     </children>
+                  </AnchorPane>
+               </content>
+               <graphic>
+                  <ImageView fx:id="patImg1" fitHeight="41.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/Images/findpat_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#goHome" prefHeight="23.0" prefWidth="98.0" text="Back" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+   </bottom>
+</BorderPane>

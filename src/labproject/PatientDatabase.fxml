@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="518.0" prefWidth="724.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="labproject.PatientDatabaseController">
+   <children>
+      <TableView fx:id="table" layoutX="7.0" layoutY="123.0" prefHeight="395.0" prefWidth="716.0">
+        <columns>
+          <TableColumn prefWidth="48.0" text="ID" />
+          <TableColumn prefWidth="200.0" text="Name" />
+            <TableColumn prefWidth="114.0" text="Phone" />
+            <TableColumn prefWidth="71.0" text="Gender" />
+            <TableColumn prefWidth="58.0" text="Age" />
+            <TableColumn prefWidth="96.0" text="Date" />
+            <TableColumn prefWidth="128.0" text="Health Problem" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

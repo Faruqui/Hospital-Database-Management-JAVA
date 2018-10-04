@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="650.0" style="-fx-background-color: LIGHTSLATEGREY;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labproject.DemoController">
+   <children>
+      <TextField fx:id="username" alignment="CENTER" layoutX="423.0" layoutY="284.0" prefHeight="33.0" prefWidth="191.0" promptText="Username" style="-fx-background-color: MISTYROSE;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="pass" alignment="CENTER" layoutX="422.0" layoutY="326.0" prefHeight="33.0" prefWidth="191.0" promptText="Password" style="-fx-background-color: MISTYROSE;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </PasswordField>
+      <Text fill="#ecfcff" fontSmoothingType="LCD" layoutX="424.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="   Login" wrappingWidth="191.0">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Text>
+      <Button defaultButton="true" layoutX="466.0" layoutY="386.0" mnemonicParsing="false" onAction="#signIn" prefHeight="33.0" prefWidth="106.0" style="-fx-background-color: POWDERBLUE;" text="Log in">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Text layoutX="53.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to " wrappingWidth="282.0">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Text>
+      <Text layoutX="141.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Hospital" wrappingWidth="106.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="0.09999999999999999" endY="1.0" startX="0.10000000000000003" startY="0.17142857142857143">
+               <stops>
+                  <Stop color="#7050ff" />
+                  <Stop color="#0a0411" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <ImageView fx:id="HLogo" fitHeight="56.0" fitWidth="56.0" layoutX="261.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/hospital-icon.png" />
+         </image>
+      </ImageView>
+      <Text fill="#920097" layoutX="59.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NSU" wrappingWidth="83.0">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="nsuLogo" fitHeight="167.0" fitWidth="178.0" layoutX="119.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: LIGHTSLATEGREY;">
+         <image>
+            <Image url="@../../../../../Downloads/Nsu.logo.gif" />
+         </image>
+      </ImageView>
+      <Text layoutX="376.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Developed and monitored by Faruqui and Abrar" wrappingWidth="273.13671875" />
+      <Hyperlink layoutX="497.0" layoutY="363.0" onAction="#gotoRegistration" prefHeight="17.0" prefWidth="119.0" text="Create new account" textFill="#0d0606" underline="true" />
+      <Label fx:id="status" layoutX="422.0" layoutY="267.0" prefHeight="17.0" prefWidth="191.0" textFill="RED" />
+   </children>
+</AnchorPane>

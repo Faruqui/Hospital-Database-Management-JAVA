@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labproject.RegisterPatientController">
+   <children>
+      <Text layoutX="30.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration ID :">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Text>
+      <Text layoutX="30.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Information :">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Text>
+      <Text layoutX="229.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Registration">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#f50000" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <HBox layoutX="131.0" layoutY="127.0">
+         <children>
+            <Text layoutX="131.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient  ID :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <Glow level="1.0" />
+               </effect>
+            </Text>
+            <TextField fx:id="id" alignment="CENTER" layoutX="222.0" layoutY="127.0" onKeyPressed="#setPro1" prefHeight="25.0" prefWidth="256.0" promptText="Patient ID" />
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" layoutX="150.0" layoutY="238.0" prefHeight="214.0" prefWidth="350.0">
+         <children>
+            <TextField fx:id="name" alignment="CENTER" layoutX="148.0" layoutY="250.0" onKeyPressed="#setPro2" prefHeight="30.0" prefWidth="0.0" promptText="Name" />
+            <TextField fx:id="age" alignment="CENTER" layoutX="148.0" layoutY="284.0" onKeyPressed="#setPro3" prefHeight="30.0" prefWidth="0.0" promptText="Age" />
+            <HBox alignment="CENTER" layoutX="148.0" layoutY="318.0" prefHeight="30.0" prefWidth="331.0" style="-fx-background-color: white; -fx-border-color: grey;">
+               <children>
+                  <Text layoutX="156.0" layoutY="331.0" strokeLineCap="ROUND" strokeType="OUTSIDE" text="Gender  :" wrappingWidth="114.986328125">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <effect>
+                        <Glow level="1.0" />
+                     </effect>
+                  </Text>
+                  <RadioButton layoutX="250.0" layoutY="317.0" mnemonicParsing="false" onAction="#setGenderMale" prefHeight="17.0" prefWidth="92.0" text="Male">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="gendergrp" />
+                     </toggleGroup>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="343.0" layoutY="317.0" mnemonicParsing="false" onAction="#setGenderFemale" prefHeight="17.0" prefWidth="72.0" text="Female" toggleGroup="$gendergrp">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </HBox>
+            <TextField fx:id="phone" alignment="CENTER" layoutX="148.0" layoutY="349.0" onKeyPressed="#setPro4" prefHeight="30.0" prefWidth="0.0" promptText="Phone" />
+            <TextField fx:id="disease" alignment="CENTER" layoutX="148.0" layoutY="382.0" onKeyPressed="#setPro5" prefHeight="30.0" prefWidth="0.0" promptText="Health Problem" />
+            <Button mnemonicParsing="false" onAction="#save" text="Submit" />
+         </children>
+      </VBox>
+      <Separator layoutY="202.0" prefHeight="11.0" prefWidth="650.0" />
+      <ProgressBar fx:id="pbar" layoutX="450.0" layoutY="527.0" prefWidth="200.0" progress="0.0" />
+      <Button layoutX="293.0" layoutY="521.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="25.0" prefWidth="71.0" text="Back" AnchorPane.leftAnchor="293.0" AnchorPane.topAnchor="521.0">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" layoutX="492.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" />
+      <HBox layoutX="166.0" layoutY="160.0">
+         <children>
+            <Text layoutX="166.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <Glow level="1.0" />
+               </effect>
+            </Text>
+            <DatePicker fx:id="datePick" editable="false" layoutX="222.0" layoutY="160.0" onAction="#setDate" prefHeight="25.0" prefWidth="256.0" promptText="Date (MM/dd/YYYY)" />
+         </children>
+      </HBox>
+      <Label fx:id="error" layoutX="276.0" layoutY="108.0" prefHeight="19.0" prefWidth="135.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="msg" layoutX="440.0" layoutY="504.0" prefHeight="20.0" prefWidth="200.0" textFill="#10a81f">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

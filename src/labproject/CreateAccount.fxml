@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="274.0" prefWidth="388.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labproject.CreateAccountController">
+   <children>
+      <VBox alignment="CENTER_RIGHT" layoutX="53.0" layoutY="24.0" prefHeight="150.0" prefWidth="283.0">
+         <children>
+            <HBox alignment="CENTER_RIGHT">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="  EMAIL : ">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <TextField alignment="CENTER" prefHeight="25.0" prefWidth="205.0" promptText="Email" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_RIGHT">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="USERNAME : ">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="name" alignment="CENTER" prefHeight="25.0" prefWidth="205.0" promptText="Username" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PASSWORD : ">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <PasswordField fx:id="pass" alignment="CENTER" prefHeight="25.0" prefWidth="219.0" promptText="Password" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CONFIRM : ">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <PasswordField fx:id="conPass" alignment="CENTER" prefHeight="25.0" prefWidth="204.0" promptText="Confirm Password" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button layoutX="195.0" layoutY="182.0" mnemonicParsing="false" onAction="#register" text="Register" />
+      <Label fx:id="status" layoutX="131.0" layoutY="166.0" prefHeight="17.0" prefWidth="205.0" textFill="GREEN" />
+   </children>
+</AnchorPane>

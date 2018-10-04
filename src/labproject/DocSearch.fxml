@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labproject.DocSearchController">
+   <children>
+      <TextField fx:id="id" alignment="CENTER" layoutX="82.0" layoutY="172.0" prefHeight="25.0" prefWidth="218.0" promptText="Doctor's ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="info" editable="false" layoutX="36.0" layoutY="275.0" prefHeight="228.0" prefWidth="458.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextArea>
+      <Button defaultButton="true" layoutX="376.0" layoutY="172.0" mnemonicParsing="false" onAction="#find" prefHeight="30.0" prefWidth="66.0" text="Search">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Text layoutX="138.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor Search" textAlignment="CENTER" wrappingWidth="373.13671875">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Button layoutX="296.0" layoutY="521.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="18.0" prefWidth="80.0" text="Back" AnchorPane.leftAnchor="296.0" AnchorPane.topAnchor="521.0">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Text layoutX="36.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="37.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor's Information :" wrappingWidth="202.244140625">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Separator layoutY="220.0" prefHeight="18.0" prefWidth="650.0" />
+      <ImageView fx:id="image" fitHeight="197.0" fitWidth="145.0" layoutX="494.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

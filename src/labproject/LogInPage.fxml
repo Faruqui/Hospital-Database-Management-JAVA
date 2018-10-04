@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labproject.LogInPageController">
+   <children>
+      <ImageView fx:id="background" fitHeight="550.0" fitWidth="650.0" opacity="0.6" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../Desktop/Images/New%20folder/69761232-medical-wallpapers.jpg" />
+         </image></ImageView>
+      <AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="650.0">
+         <children>
+            <AnchorPane layoutX="94.0" layoutY="60.046875" style="-fx-background-color: #0a88c2;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox alignment="CENTER_RIGHT" layoutX="218.0" layoutY="165.0">
+                     <children>
+                        <ImageView fx:id="image" fitHeight="186.0" fitWidth="189.0" layoutX="486.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Desktop/Images/New%20folder/user_login_man_profile_account-512.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="status" prefHeight="19.0" prefWidth="202.0" textFill="#f80202">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="username" alignment="CENTER" layoutX="441.0" layoutY="316.0" prefHeight="32.0" prefWidth="102.0" promptText="Username">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <PasswordField fx:id="pass" alignment="CENTER" layoutX="441.0" layoutY="348.0" prefHeight="32.0" prefWidth="136.0" promptText="Password">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </PasswordField>
+                        <HBox layoutX="451.0" layoutY="380.0">
+                           <children>
+                              <Hyperlink layoutX="451.0" layoutY="385.0" onAction="#gotoRegistration" prefHeight="23.0" prefWidth="151.0" text="Register New Account" textFill="#00ffad">
+                                 <font>
+                                    <Font name="System Italic" size="13.0" />
+                                 </font>
+                              </Hyperlink>
+                              <Button defaultButton="true" layoutX="586.0" layoutY="380.0" mnemonicParsing="false" onAction="#signIn" prefHeight="0.0" prefWidth="63.0" text="Log In" textFill="#0a88c2">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Text layoutX="94.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;Insert Name&gt; HOSPITAL" textAlignment="CENTER" wrappingWidth="461.13671875">
+                     <font>
+                        <Font name="Bank Gothic Medium BT" size="32.0" />
+                     </font>
+                     <fill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#ff0101" />
+                              <Stop color="#750606" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="550.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labproject.PatientSearchController">
+   <children>
+      <TextField fx:id="idP" alignment="CENTER" layoutX="71.0" layoutY="132.0" prefHeight="31.0" prefWidth="210.0" promptText="Patient ID" />
+      <Button defaultButton="true" layoutX="334.0" layoutY="132.0" mnemonicParsing="false" onAction="#search" prefHeight="31.0" prefWidth="70.0" text="Search">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TextArea fx:id="info" editable="false" layoutX="27.0" layoutY="230.0" prefHeight="254.0" prefWidth="503.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextArea>
+      <Text layoutX="27.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID :" wrappingWidth="35.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="27.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Information :" wrappingWidth="178.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Separator layoutX="5.0" layoutY="185.0" prefHeight="10.0" prefWidth="650.0" />
+      <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" layoutX="468.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="293.0" layoutY="521.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="21.0" prefWidth="83.0" text="Back" AnchorPane.leftAnchor="293.0" AnchorPane.topAnchor="521.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Text layoutX="178.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Search" textAlignment="CENTER" wrappingWidth="312.13671875">
+         <font>
+            <Font size="34.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+   </children>
+</AnchorPane>
